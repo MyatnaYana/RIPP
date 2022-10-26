@@ -1,0 +1,22 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+  <meta charset="utf-8">
+    <title>{% block title %}{% endblock %}</title>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'rotate.css' %}">
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'back.css' %}">
+<!--<style>
+    body {
+    background-color: #FFF8DC;
+    }
+</style>-->
+</head>
+<body>
+    Hello BMSTU students!
+    Today is {{ data.current_date }}
+    {% block content %}{% endblock %}
+</body>
+</html>
